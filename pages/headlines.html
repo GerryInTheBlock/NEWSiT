@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headlines</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .profile-header {
+            background-color: #8b95a5;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .profile-header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+        .card-header {
+            background-color: #8b95a5;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header class="sticky-top mb-3">
+        <div class="container row d-flex justify-content-between mx-auto">
+            <div class="title-page col-lg-6 d-flex align-items-center justify-content-start mb-0 gap-2">
+                <a href="#"><h1 class="news-web-title text-center text-white mb-0 pb-0">news<span class="logo">i</span>T</h1></a>
+                <p class="news-web-tagline d-flex justify-content-center bg-white fw-bold text-center">Uncover the Stories that Matter</p>
+            </div>
+            <nav class="navbar col-lg-5 navbar-expand-lg">
+                <div class="container">
+                    <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                      <ul class="navbar-nav me-auto mt-2 mb-lg-0">
+                        <li class="nav-item d-flex align-items-center">
+                            <a class="nav-link active text-white d-flex align-items-center gap-1" aria-current="page" href="../index.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-house" viewBox="0 0 16 16"><path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/></svg>Home</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                            <a class="nav-link active text-white d-flex align-items-center gap-1" aria-current="page" href="../pages/about.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-house" viewBox="0 0 16 16"><path d="M8.05 9.6c.336 0 .504-.24.554-.627.04-.534.198-.815.847-1.26.673-.475 1.049-1.09 1.049-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.7 1.7 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745"/><path d="m10.273 2.513-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911z"/><path d="M7.001 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0"/></svg>About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active text-white d-flex align-items-center gap-1" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-house" viewBox="0 0 16 16"><path d="M2 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L7 13.101l-4.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v10.566l3.723-2.482a.5.5 0 0 1 .554 0L11 14.566V4a1 1 0 0 0-1-1z"/></svg> Category</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item fw-bold" href="sports.html">Sports</a></li>
+                                <li><a class="dropdown-item fw-bold" href="business.html">Business</a></li>
+                                <li><a class="dropdown-item fw-bold" href="technology.html">Technology</a></li>
+                                <li><a class="dropdown-item fw-bold" href="showbiz.html">Showbiz</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active text-white d-flex align-items-center gap-1"aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-house" viewBox="0 0 16 16"><path d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m.256 7a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1zm3.63-4.54c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382zM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"/></svg>Account</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item fw-bold" href="../forms/dashboard.html">Dashboard</a></li> <hr>
+                                <li><a class="dropdown-item fw-bold" href="#">Log-Out</a></li> 
+                            </ul>
+                        </li>
+                      </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="news container-fluid my-3">
+        <div class="row">
+            <div class="col-4">
+              <div id="list-example" class="list-group position-sticky" style="top: 10rem;">
+                <a class="list-group-item list-group-item-action bg-secondary active text-white" href="#list-item-1">Filipino fishers..</a>
+                <a class="list-group-item list-group-item-action bg-secondary active text-white" href="#list-item-2">Agricultural groups..</a>
+                <a class="list-group-item list-group-item-action bg-secondary active text-white" href="#list-item-3">GSIS waives..</a>
+                <a class="list-group-item list-group-item-action bg-secondary active text-white" href="#list-item-4">Authorities to..</a>
+                <a class="list-group-item list-group-item-action bg-secondary active text-white" href="#list-item-5">Big-time oil..</a>
+                <a class="list-group-item list-group-item-action bg-secondary active text-white" href="#list-item-6">LTO warns..</a>
+              </div>
+            </div>
+            <div class="col-8">
+              <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                <div class="col-lg-12 col-md-12">
+                    <div id="list-item-1">
+                        <div class="article-header">
+                            <h1 class="display-4">Filipino fishers continue to sail despite China’s arrest threat</h1>
+                            <p class="text-muted">By Author Name | June 26, 2024</p>
+                        </div>
+                        <img src="../assets/headlines/main headline.jpg" alt="Article Image" class="img-fluid mb-4">
+                        <div class="article-content">
+                            <p>MANILA – Filipino fisherfolk continued to sail to the Bajo de Masinloc, also called Panatag and Scarborough Shoal, in the West Philippine Sea on Saturday, the start of Beijing’s implementation of a regulation that authorizes the China Coast Guard (CCG) to detain supposed trespassers in what it considers maritime borders.</p>
+                            <p>A group of fishermen left Masinloc town in Zambales province on Friday and Saturday for days of expedition in the tense waters amid reports of increased presence of CCG vessels and arrest threats.</p>
+                            <p>“Awa ng Diyos po, kagabi, merong maraming pumalaot kagabi at kahapon, marami pong nagpanga-araw. Sa ngayon, marami na naman pong pumalaot na nagpang-araw at nangangawil sila sa mga lugar ng mga payao diyan sa West Philippine Sea,” New Masinloc Fishermen Association President Leonardo Cuaresma told ABS-CBN News in a telephone interview.</p>
+                        </div>
+                    </div> <hr>
+                    <div id="list-item-2">
+                        <div class="article-header">
+                            <h1 class="display-4">Agricultural groups oppose tariff cuts on rice</h1>
+                            <p class="text-muted">By Author Name | June 26, 2024</p>
+                        </div>
+                        <img src="../assets/headlines/headline1.jpg" alt="Article Image" class="img-fluid mb-4">
+                        <div class="article-content">
+                            <p>MANILA – Agriculture groups on Friday opposed the National Economic and Development Authority’s (NEDA) proposed tariff reduction on agricultural products.</p>
+                            <p>Freedom from Debt Coalition, Integrated Rural Development Foundation, and Samahang Industriya ng Agrikultura (SINAG) expressed dismay over NEDA’s planned tariff cuts on staple food from the previous 35 percent to 15 percent until 2028, saying this is not a way to go.</p>
+                            <p>Professor Teodoro Mendoza, who specializes in agriculture and crop science at the University of the Philippines Los Baños, said this would not benefit Filipino farmers, as this would put pressure to lower palay’s farmgate price, decreasing their income.</p>
+                            <p>“Ang worry nga lang pag pina-iiral itong tarrif reduction na ito at yung pinaka malaking comment ko yung 4.1 million metric tons pag yan ang itinuloy nila, at di binago ng DA, talagang babagsak ang presyo ng palay,” he said.</p>
+                        </div>
+                    </div> <hr>
+                    <div id="list-item-3">
+                        <div class="article-header">
+                            <h1 class="display-4">GSIS waives P1.6B in penalties in home loan program</h1>
+                            <p class="text-muted">By Author Name | June 26, 2024</p>
+                        </div>
+                        <img src="../assets/headlines/headline2.jpg" alt="Article Image" class="img-fluid mb-4">
+                        <div class="article-content">
+                            <p>MANILA -- The Government Service Insurance System (GSIS) said it waived P1.6 billion in penalties for the beneficiaries of its housing loan program in the first quarter of 2024.</p>
+                            <p>In a statement, the GSIS also said it gave P121 million in interest discounts to borrowers under their Housing Accounts Restructuring and Condonation Program (HARCP). The GSIS said it hopes to help families secure their homes during difficult times.</p>
+                            <p>"Eviction is not our goal. We continuously support them and ceaselessly provide viable solutions in times of need," said GSIS President and General Manager Wick Veloso.</p>
+                        </div>
+                    </div> <hr>
+                    <div id="list-item-4">
+                        <div class="article-header">
+                            <h1 class="display-4">Authorities to meet next week on apprehension of unconsolidated PUJs</h1>
+                            <p class="text-muted">By Author Name | June 26, 2024</p>
+                        </div>
+                        <img src="../assets/headlines/headline3.jpg" alt="Article Image" class="img-fluid mb-4">
+                        <div class="article-content">
+                            <p>MANILA -- The Metropolitan Manila and Development Authority (MMDA), Land Transportation Franchising and Regulatory Board (LTFRB), and other government agencies are meeting again on June 20 to iron out the guidelines on apprehending unconsolidated public utility jeepneys (PUJs), an official said on Friday.</p>
+                            <p>Jeepney drivers and operators picket outside the Supreme Court in Manila on June 11, 2024, reiterating their call to the judiciary to issue a temporary restraining order (TRO) against the public utility vehicle modernization program. The Land Transportation Franchising and Regulatory Board is set to apprehend unconsolidated jeepneys plying the road, deeming them illegal or 'colorum'. Mark Demayo, ABS-CBN News.</p>
+                            <p>MMDA acting chairman Romando Artes said the MMDA doesn't have any guidelines or memorandum yet from the Department of Transportation (DOTr) and the LTFRB on how to apprehend unconsolidated PUJs.</p>
+                        </div>
+                    </div> <hr>
+                    <div id="list-item-5">
+                        <div class="article-header">
+                            <h1 class="display-4">Big-time oil price hike looms in third week of June</h1>
+                            <p class="text-muted">By Author Name | June 26, 2024</p>
+                        </div>
+                        <img src="../assets/headlines/headline4.jpg" alt="Article Image" class="img-fluid mb-4">
+                        <div class="article-content">
+                            <p>MANILA -- After falling a day before Independence Day, oil prices may climb again next week, the Department of Energy (DOE) said Friday.</p>
+                            <p>According to the DOE, pump prices may rise by the following amounts:</p>
+                            <p>Gasoline - P0.60/L to P0.85/L <br>
+                                Diesel - P1.45/L to P1.70/L <br>
+                                Kerosene - P1.85/L to 1.90/L</p>
+                            <p>The DOE also reminded fuel retailers to comply with regulations and ensure that any price changes are implemented fairly and transparently. Retailers are required to display updated price information prominently at their stations, allowing consumers to compare prices and choose the most cost-effective options.</p>
+                            <p>In the long term, the DOE remains committed to pursuing policies and initiatives that promote energy security, sustainability, and affordability. By fostering a competitive and transparent energy market, the government aims to protect consumers from price shocks and ensure a stable and reliable energy supply for the nation.</p>
+                        </div>
+                    </div> <hr>
+                    <div id="list-item-6">
+                        <div class="article-header">
+                            <h1 class="display-4">LTO warns public vs scams, fake websites</h1>
+                            <p class="text-muted">By Author Name | June 26, 2024</p>
+                        </div>
+                        <img src="../assets/headlines/headline5.jpg" alt="Article Image" class="img-fluid mb-4">
+                        <div class="article-content">
+                            <p>MANILA -- The Land Transportation Office (LTO) on Friday warned the public against scammers who pretend to be personnel from its office.</p>
+                            <p>The LTO said there is a scam where some users receive text messages saying they have a traffic violation, with a link to what is supposedly the LTO website. These messages often include urgent language to provoke immediate action from recipients, making them more likely to click the fraudulent links provided.</p>
+                            <p>Tugade also mentioned that the LTO is working closely with law enforcement agencies to track down and apprehend the perpetrators of these scams. "We are coordinating with the National Bureau of Investigation (NBI) and the Philippine National Police (PNP) to identify and prosecute those behind these fraudulent activities," he added.</p>
+                            <p>The LTO also urged media outlets and community organizations to help disseminate information about these scams and encourage people to report any suspicious activities. "By working together, we can help prevent these scams and protect the public from falling victim to these fraudulent schemes," Tugade said.</p>
+                            <p>The LTO remains committed to ensuring the safety and security of the public in all its transactions. The agency reassured the public that it will continue to take all necessary measures to combat scams and protect the integrity of its services.</p>
+                        </div>
+                    </div> <hr>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </section>
+
+    <footer class="py-4 flex-shrink-0 ">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-3">Newsletter</h5>
+                    <p class="small text-muted">Stay updated with the latest news and stories. Subscribe to our newsletter for regular updates directly to your inbox.</p>
+                    <form action="#">
+                        <div class="input-group mb-3">
+                            <input class="form-control" type="text" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button class="btn btn-primary" id="button-addon2" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
+                                <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z"/>
+                              </svg></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Quick links</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="headlines.html">Top News</a></li>
+                        <li><a href="../forms/registration.html">Get Started</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Quick links</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="headlines.html">Headlines</a></li>
+                        <li><a href="sports.html">Sports</a></li>
+                        <li><a href="business.html">Business</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="showbiz.html">Showbiz</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="logo text-white fw-bold">NEWS<span class="logo">i</span>T</h5>
+                    <p class="small text-muted">You can also visit us here.
+                        <span class="icons-footer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="icons mx-1" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="icons mx-2" viewBox="0 0 16 16">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                            </svg>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="icons" viewBox="0 0 16 16">
+                                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                            </svg>
+                        </span>
+                    </p>
+                    <p class="small text-muted mb-0">&copy; Copyrights. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

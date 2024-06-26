@@ -1,0 +1,61 @@
+h1, h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 100px;
+    color: #9299ab;
+}
+
+h3, h4, h5, p, a {
+    font-family: "Montserrat", sans-serif;
+}
+.logo {
+    font-family: "Montserrat", sans-serif;
+}
+header {
+    background-color: #8b95a5;
+}
+.news-web-title {
+    margin-left: 10px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.news-web-tagline {
+    width: 100vh;
+    font-size: 15px;
+    border-radius: 0 20px 20px 0;
+    color: #8b95a5;
+    margin-top: 0;
+    margin-bottom: 0.5rem; 
+}
+.navbar {
+    margin-left: 10px;
+    margin-top: -20px;
+}
+.dropdown-item {
+    color: #9299ab;
+}
+.nav-item {
+    margin-left: 20px;
+}
+footer {
+    background-color: #8b95a5;
+}
+.title-header {
+    color: #8b95a5;
+}
+.card-body-main {
+    background-color: #9299ab;
+    color: aliceblue;
+}
+.card:hover {
+    box-shadow: 10px 10px 5px #9299ab;
+    margin-left: 10px;
+}
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(104, 118, 131);
+}
+.card-title {
+    text-transform: uppercase;
+    font-weight: bold;
+}
