@@ -1,0 +1,2 @@
+# NEWSiT
+a news website
